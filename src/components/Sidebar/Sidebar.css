@@ -1,0 +1,131 @@
+#sidebar-wrapper {
+  z-index: 1000;
+  position: absolute;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #fff;
+  border-right: solid 1px #ddd;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.nav-pills>li>a {
+  border-radius: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2px;
+}
+
+.nav-bottom {
+  bottom: 0;
+  top: auto;
+}
+
+.sidebar-nav li {
+  text-indent: 21px;
+  line-height: 40px;
+}
+
+.sidebar-nav li .nav-icon img {
+  width: 21px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+}
+
+.customNav>.nav-pills>li.active>a,
+.customNav>.nav-pills>li.active>a:focus,
+.customNav>.nav-pills>li.active>a:hover,
+.customNav>.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #333;
+  background: #EEF7FE;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.fa-stack {
+  width: 2.65em;
+}
+
+.sidebar-nav .dropdownnav_wrap .dropdown-menu {
+  margin-left: 250px;
+  width: 250px;
+  margin-top: -175px;
+}
+
+.sidebar-nav .dropdownnav_wrap li {
+  display: block;
+  float: left;
+  width: 100%;
+  text-indent: initial;
+}
+
+.sidebar-nav .dropdownnav_wrap ul.dropdown-menu li a {
+  padding: 5px 20px;
+  margin: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    width: 250px;
+  }
+
+  #mainwrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+
+  #mainwrapper.toggled-2 #sidebar-wrapper {
+    width: 65px;
+  }
+
+  #mainwrapper.toggled-2 #sidebar-wrapper:hover {
+    width: 250px;
+  }
+}
